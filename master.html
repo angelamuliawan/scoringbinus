@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Penilaian</title>
+    <!-- Le styles -->
+		<!-- CSS -->
+		<link href="assets/style.css" rel="stylesheet">
+		<link href="assets/jquery-ui-1.10.3/css/blitzer/jquery-ui-1.10.3.custom.css" rel="stylesheet">
+		<link href="assets/jquery-ui-1.10.3/css/blitzer/jquery-ui-1.10.3.custom.min.css" rel="stylesheet">
+		<!-- Jquery -->
+		<script src="assets/jquery.js"></script>
+		<script src="assets/jquery-ui-1.10.3/js/jquery-1.9.1.js"></script>
+		<script src="assets/jquery-ui-1.10.3/js/jquery-ui-1.10.3.custom.js"></script>
+		<script src="assets/jquery-ui-1.10.3/js/jquery-ui-1.10.3.custom.min.js"></script>
+		
+		<script type="text/javascript">
+			$(document).ready(function() {
+			 	$(".box").fadeIn(1000);
+					/* EXAMPLE TO LOAD MASTER PAGE
+					$("body").load( "home.html" );
+					*/
+			
+				$("#btnHome").click(function(){
+					window.location.href = "mainweb.html";
+				});
+			});
+		</script>
+ </head>
+	
+  <body>
+		<div class="banner fixed-top">
+			<img src="assets/img/logo.png" height="120px"  width="400px" style="margin-top:-50px; margin-left:-550px;"/>
+			<img src="assets/img/home.png" height="70px"  width="100px" id="btnHome" class="icon-home" title="Go To Main Website"/>
+		</div>
+		<div class="container">
+			<div class="box" style="display:none;">
+				<h1> Member Login </h1><hr>
+				<div class="form-login-input">
+					<input type="text" placeholder="Student ID, Lecturer ID or Staff ID" />
+				</div>
+				<div class="form-login-input">
+					<input type="password" placeholder="Password" />
+				</div>
+				<div align="center">
+					<input type="radio" name="role" value="student" id="rbStudent" /><label for="rbStudent"class="radio">Student</label>
+					&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="role" value="lecturer" id="rbLecturer"/><label for="rbLecturer" class="radio">Lecturer</label>
+					&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="role" value="staff"  id="rbStaff" /><label for="rbStaff" class="radio">Staff</label>
+					<br>
+				</div>
+				<br>
+				<div align="center" class="form-login-input">
+					<label style="cursor:pointer" class="forgot"> Forgot Password ?</label>
+				</div>
+				<div align="center" class="form-login-input">
+					<input type="button" value="Login" />
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer">
+			Sistem Informasi Penilaian Mahasiswa &copy - 2013
+		</div>
+		
+  </body>
+ </html>
