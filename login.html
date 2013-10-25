@@ -1,37 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Penilaian</title>
-    <!-- Le styles -->
-		<!-- CSS -->
-		<link href="assets/style.css" rel="stylesheet">
-		<link href="assets/jquery-ui-1.10.3/css/blitzer/jquery-ui-1.10.3.custom.css" rel="stylesheet">
-		<link href="assets/jquery-ui-1.10.3/css/blitzer/jquery-ui-1.10.3.custom.min.css" rel="stylesheet">
 		<!-- Jquery -->
 		<script src="assets/jquery.js"></script>
-		<script src="assets/jquery-ui-1.10.3/js/jquery-1.9.1.js"></script>
-		<script src="assets/jquery-ui-1.10.3/js/jquery-ui-1.10.3.custom.js"></script>
-		<script src="assets/jquery-ui-1.10.3/js/jquery-ui-1.10.3.custom.min.js"></script>
-		
 		<script type="text/javascript">
-			$(document).ready(function() {
-			 	$(".box").fadeIn(1000);
-					/* EXAMPLE TO LOAD MASTER PAGE
-					$("body").load( "home.html" );
-					*/
-			
-				$("#btnHome").click(function(){
-					window.location.href = "mainweb.html";
+				$(document).ready(function() {
+					/*To Load Master Page*/
+					$("head").load( "head.html" );
+					$(".banner").load("banner.html");
+					$(".footer").load("footer.html");
+					/*End Of Load Master Page*/
+
+					$(".box").fadeIn(2000);
 				});
-			});
 		</script>
- </head>
-	
+	<head>
+   </head>
+
   <body>
-		<div class="banner fixed-top">
-			<img src="assets/img/logo.png" height="120px"  width="400px" style="margin-top:-50px; margin-left:-550px;"/>
-			<img src="assets/img/home.png" height="70px"  width="100px" id="btnHome" class="icon-home" title="Go To Main Website"/>
-		</div>
+		<div class="banner fixed-top"></div>
 		<div class="container">
 			<div class="box" style="display:none;">
 				<h1> Member Login </h1><hr>
@@ -58,8 +44,6 @@
 		</div>
 		
 		<div class="footer">
-			Sistem Informasi Penilaian Mahasiswa &copy - 2013
 		</div>
-		
   </body>
  </html>
